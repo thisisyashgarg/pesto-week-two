@@ -1,0 +1,55 @@
+/* #app{
+              height: 100px;
+              width: 100px;
+              background-color: aqua;
+              transition-property: background-color, width;
+              transition-duration: 5s;
+              transition-timing-function: ease-in;
+
+        }
+
+        #app:hover {
+            background-color: red;
+            height: 100px;
+              width: 500px;
+
+        } */
+
+
+        /* #app{
+              height: 100px;
+              width: 100px;
+              background-color: aqua;
+              transition-property: transform;
+              transition-duration: 1s;
+              border-radius: 50px;
+
+        } */
+
+        /* #app:hover {
+           transform: rotate(45deg);
+           transform: translate(90px, 90px);
+        } */
+
+        #app{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: slide, pulse;
+            animation-duration: 1s, 0.01s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes pulse {
+            0% {background-color: black;}
+            100%  {background-color: white;}
+            
+        }
+
+        @keyframes slide {
+            
+           100% { transform: translatex(400px);}
+
+        }
